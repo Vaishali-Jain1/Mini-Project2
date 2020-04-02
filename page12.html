@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Page-12</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        #wrapper {}
+
+        .main h1 {
+
+            text-shadow: 2px 2px red;
+            font-size: 50px;
+            font-style: italic;
+            display: inline;
+            margin: 10px;
+        }
+
+        .main img {
+            width: 150px;
+            height: 80px;
+            padding-left: 30px;
+            margin-bottom: -10px;
+
+        }
+
+        .main #btn1 {
+            border-radius: 5px;
+            margin-left: 1300px;
+            margin-top: -50px;
+            font-size: 20px;
+            width: 100px;
+            font-style: normal;
+            color: black;
+            padding-left: 20px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 9px;
+            background-color: lightgreen;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .search {
+            margin-top: -40px;
+        }
+
+        .search input[type=text] {
+            width: 400px;
+            height: 35px;
+            margin-left: 500px;
+            border-radius: 4px;
+            border-color: black;
+
+            border: 1px solid black;
+            padding-left: 6px;
+        }
+
+        .search button[type=submit] {
+            width: 40px;
+            height: 35px;
+            border-radius: 4px;
+        }
+
+
+        .list {
+            text-align-last: center;
+        }
+
+        .list ul {
+            list-style: none;
+            display: inline-flex;
+            background-color: darkblue;
+
+
+
+        }
+
+        .list ul li {
+            width: 180px;
+            padding: 15px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .list ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .list ul li:hover {
+            background-color: deeppink;
+            border-radius: 5px;
+        }
+
+        .fa {
+            margin-right: 0px;
+        }
+
+        .active,
+        .list ul li:hover {
+            background-color: deeppink;
+            border-radius: 5px;
+        }
+
+        .list1 ul {
+            background-color: blanchedalmond;
+            height: 300;
+            width: 15%;
+            margin-top: 0px;
+            float: left;
+        }
+
+        .list1 ul li {
+            display: block;
+            margin: 20px;
+            border-bottom: 1px solid black;
+            padding: 15px;
+        }
+
+        .list1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .list1 ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .list1 ul li a:hover {
+            background-color: black;
+            padding: 10px;
+            color: white;
+        }
+
+        .active1,
+        .list1 ul li a:hover {
+            background-color: gray;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .content {
+            border: 1.5px solid black;
+            margin: 20px;
+            margin-left: 250px;
+            padding: 20px;
+            border-radius: 4px;
+
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+
+        .content img {
+            margin-left: 900px;
+            margin-top: -200px;
+        }
+
+        .content h3 {
+            margin-left: 90px;
+            font-size: 35px;
+        }
+
+        .content pre {
+            margin-left: 10px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+        .content p {
+            font-size: 26px;
+            text-shadow: 2px 2px grey;
+        }
+
+        .content h5 {
+            margin-left: 100px;
+            font-size: 20px;
+        }
+
+        .content a:link {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .content #btn1 {
+            width: 120px;
+            font-size: 20px;
+            padding: 15px;
+            font-style: italic;
+            background-color: lightgreen;
+            margin-left: 25px;
+            border-radius: 8px;
+        }
+
+        .content #btn2 {
+            width: 90px;
+            padding: 15px;
+            font-size: 20px;
+            background-color: lightgreen;
+            font-style: italic;
+            margin-left: 550px;
+            border-radius: 8px;
+
+        }
+
+        .content ul li {
+            margin-left: 20px;
+            font-size: 18px;
+        }
+             .site-footer {
+                            background-color: #26272b;
+                            padding: 45px 0 20px;
+                            font-size: 15px;
+                            line-height: 24px;
+                            color: #737373;
+                            padding: 20px;
+                        }
+
+                        .site-footer hr {
+                            border-top-color: #bbb;
+                            opacity: 0.5
+                        }
+
+                        .site-footer hr.small {
+                            margin: 20px 0
+                        }
+
+                        .site-footer h6 {
+                            color: #fff;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            margin-top: 5px;
+                            letter-spacing: 2px
+                        }
+
+                        .site-footer a {
+                            color: #737373;
+                        }
+
+                        .site-footer a:link {
+                            text-decoration: none;
+                        }
+
+                        .site-footer a:hover {
+                            color: #3366cc;
+                            text-decoration: none;
+                        }
+
+                        .footer-links {
+                            padding-left: 0;
+                            list-style: none
+                        }
+
+                        .footer-links li {
+                            display: block
+                        }
+
+                        .footer-links a {
+                            color: #737373
+                        }
+
+                        .footer-links a:active,
+                        .footer-links a:focus,
+                        .footer-links a:hover {
+                            color: #3366cc;
+                            text-decoration: none;
+                        }
+
+                        .footer-links.inline li {
+                            display: inline-block
+                        }
+
+                        .site-footer .social-icons {
+                            text-align: right
+                        }
+
+                        .site-footer .social-icons a {
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            margin-left: 6px;
+                            margin-right: 0;
+                            border-radius: 100%;
+                            background-color: #33353d
+                        }
+
+                        .copyright-text {
+                            margin: 0
+                        }
+
+                        @media (max-width:991px) {
+                            .site-footer [class^=col-] {
+                                margin-bottom: 30px
+                            }
+                        }
+
+                        @media (max-width:767px) {
+                            .site-footer {
+                                padding-bottom: 0
+                            }
+
+                            .site-footer .copyright-text,
+                            .site-footer .social-icons {
+                                text-align: center
+                            }
+                        }
+
+                        .social-icons {
+                            padding-left: 0;
+                            margin-bottom: 0;
+                            list-style: none
+                        }
+
+                        .social-icons li {
+                            display: inline-block;
+                            margin-bottom: 4px
+                        }
+
+                        .social-icons li.title {
+                            margin-right: 15px;
+                            text-transform: uppercase;
+                            color: #96a2b2;
+                            font-weight: 700;
+                            font-size: 13px
+                        }
+
+                        .social-icons a {
+                            background-color: #eceeef;
+                            color: #818a91;
+                            font-size: 16px;
+                            display: inline-block;
+                            line-height: 44px;
+                            width: 44px;
+                            height: 44px;
+                            text-align: center;
+                            margin-right: 8px;
+                            border-radius: 100%;
+                            -webkit-transition: all .2s linear;
+                            -o-transition: all .2s linear;
+                            transition: all .2s linear
+                        }
+
+                        .social-icons a:active,
+                        .social-icons a:focus,
+                        .social-icons a:hover {
+                            color: #fff;
+                            background-color: #29aafe
+                        }
+
+                        .social-icons.size-sm a {
+                            line-height: 34px;
+                            height: 34px;
+                            width: 34px;
+                            font-size: 14px
+                        }
+
+                        .social-icons a.facebook:hover {
+                            background-color: #3b5998
+                        }
+
+                        .social-icons a.twitter:hover {
+                            background-color: #00aced
+                        }
+
+                        .social-icons a.linkedin:hover {
+                            background-color: #007bb6
+                        }
+
+                        .social-icons a.dribbble:hover {
+                            background-color: #ea4c89
+                        }
+
+                        @media (max-width:767px) {
+                            .social-icons li.title {
+                                display: block;
+                                margin-right: 0;
+                                font-weight: 600
+                            }
+                        }
+                   
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div class="main1">
+            <div class="main">
+                <h1>NotesBog</h1>
+                <img src="a.jpg" />
+            </div>
+            <br>
+            <div class="list">
+                <ul>
+                    <li><a href="page1.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="page2.html">HTML</a></li>
+                    <li><a href="css%20.html">CSS</a></li>
+                    <li><a href="js.html">JavaScript</a></li>
+                    <li><a href="jq.html">jQuery</a></li>
+                    <li><a href="bs.html">Bootstrap</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="list1">
+            <ul>
+                <li><a href="page3.html">Introduction HTML</a></li>
+                <li><a href="page4.html">HTML Basics</a></li>
+                <li><a href="page5.html">HTML Elements</a></li>
+                <li><a href="page6.html">HTML5 Semantics</a></li>
+                <li><a href="page7.html">HTML Attributes</a></li>
+                <li><a href="page8.html">HTML Headings</a></li>
+                <li><a href="page9.html">HTML Paragraph</a></li>
+                <li><a href="page10.html">HTML Styles</a></li>
+                <li><a href="page11.html">HTML Quotations</a></li>
+                <li class="active1"><a href="page12.html">HTML CSS</a></li>
+                <li><a href="page13.html">HTML Links</a></li>
+                <li><a href="page14.html">HTML Images</a></li>
+                <li><a href="page15.html">HTML Lists</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>HTML CSS</h1>
+            <br><br>
+            <h3>Styling HTML with CSS</h3>
+            <br>
+            <pre><strong>CSS</strong> stands for <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets.
+
+CSS describes <strong>how HTML elements are to be displayed on screen, paper, or in other media.</strong>
+
+CSS <strong>saves a lot of work</strong>. It can control the layout of multiple web pages all at once.
+
+CSS can be added to HTML elements in 3 ways:</pre>
+<br>
+            <img src="html-tutorial.png">    
+            <ul>
+                <li><strong>Inline</strong> - by using the style attribute in HTML elements</li>
+                <li><strong>Internal</strong> - by using a <strong>&lt;style&gt;</strong> element in the <strong>&lt;head&gt;</strong> section</li>
+                <li><strong>External</strong> - by using an external CSS file</li>
+            </ul>
+            <pre>The most common way to add CSS, is to keep the styles in separate CSS files.
+However, here we will use inline and internal styling, 
+because this is easier to demonstrate, and easier for you to try it yourself.</pre>
+            <br><br>
+            <h3>Inline CSS</h3>
+            <pre>An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+
+This example sets the text color of the <strong>&lt;h1&gt;</strong> element to blue:</pre>
+            <br><br>
+            <h5>Example</h5>
+            <pre style="border: 1px solid black; margin-right: 600px; margin-left: 20px; padding-top: 20px;font-style: oblique; padding-bottom: 20px; background-color:lightblue; border-radius: 5px;">  <strong>&lt;h1</strong> style="color:blue;"<strong>&gt;</strong>This is a Blue Heading<strong>&lt;/h1&gt;</strong> </pre>
+            <br><br>
+            <h3>Internal CSS</h3>
+            <pre>An internal CSS is used to define a style for a single HTML page.
+
+An internal CSS is defined in the <strong>&lt;head&gt;</strong> section of an HTML page, within a <strong>&lt;style&gt;</strong> element:
+</pre>
+            <br><br>
+            <h5>Example</h5>
+            <pre style="border: 1px solid black; margin-right: 600px; margin-left: 20px; padding-top: 20px;font-style: oblique;
+             padding-bottom: 20px; background-color:lightblue; border-radius: 5px;">
+      <strong>&lt;!DOCTYPE html&gt;</strong>
+      <strong>&lt;html&gt;</strong>
+      <strong>&lt;head&gt;</strong>
+      <strong>&lt;style&gt;</strong>
+      body {background-color: powderblue;}
+      h1   {color: blue;}
+      p    {color: red;}
+      <strong>&lt;/style&gt;</strong>
+      <strong>&lt;/head&gt;</strong>
+      <strong>&lt;body&gt;</strong>
+
+      <strong>&lt;h1&gt;</strong>This is a heading<strong>&lt;/h1&gt;</strong>
+      <strong>&lt;p&gt;</strong>This is a paragraph.<strong>&lt;/p&gt;</strong>
+
+      <strong>&lt;/body&gt;</strong>
+      <strong>&lt;/html&gt;</strong></pre>
+            <br><br>
+            <h3>External CSS</h3>
+            <pre>An external style sheet is used to define the style for many HTML pages.
+
+<strong>With an external style sheet, you can change the look of an entire web site, by changing one file!</strong>
+
+To use an external style sheet, add a link to it in the <strong>&lt;head&gt;</strong> section of the HTML page:</pre>
+            <br><br>
+            <h5>Example</h5>
+            <pre style="border: 1px solid black; margin-right: 600px; margin-left: 20px; padding-top: 20px;font-style: oblique;
+             padding-bottom: 20px; background-color:lightblue; border-radius: 5px;">
+   body {
+     background-color: powderblue;
+   }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+</pre>
+    
+            <br><br><br><br>
+            <button type="button" id="btn1"><i class="fa fa-caret-left" aria-hidden="true"></i><a href="page11.html">previous</a></button>
+            <button type="button" id="btn2"><a href="page13.html">next</a><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+
+        </div><footer class="site-footer">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-20 col-md-15">
+                                            <h6>About</h6>
+                                            <p class="text-justify">NotesBog <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the <br>code.
+                                                <br>
+                                                NotesBog focuses on providing the most efficient code or snippets as the code wants to be simple. <br>
+                                                We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, <br>JavaScript, PHP, Android, SQL and Algorithm.</p>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                        <br>
+                                        <div class="col-xs-20 col-md-15">
+                                            <h6>Categories</h6>
+                                            <ul class="footer-links">
+                                                <li><a href="c.html">C</a></li>
+                                                <li><a href="page2.html">HTML</a></li>
+                                                <li><a href="css%20.html">CSS</a></li>
+                                                <li><a href="java.html">Java</a></li>
+                                                <li><a href="js.html">JavaScript</a></li>
+                                                <li><a href="bs.html">Bootstrap</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-6 col-xs-12">
+                                            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                                                <a href="#">Scanfcode</a>.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-md-8 col-sm-6 col-xs-12">
+                                            <ul class="social-icons">
+                                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                      
+    </div>
+</body></html>
